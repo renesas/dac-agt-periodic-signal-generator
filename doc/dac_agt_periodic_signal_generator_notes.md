@@ -1,4 +1,4 @@
-# Introduction #
+# DAC AGT Periodic Signal Generator Software Building Block #
 This example project demonstrates the configuration of the DAC, AGT, and DTC to generate a continuous sinusoidal signal. The user will define the samples per period and frequency in Hz of the desired output wave via the terminal. The samples per period are used to compute and store one period of the sinusoidal in a lookup table (LUT), and the frequency is used to set the AGT period to the appropriate sampling rate. The AGT generates an interrupt that triggers the DTC to transfer the next value of the LUT to the DADR0 register. The output sinusoidal wave will oscillate between the minimum and maximum DAC values at the user-specified samples per period and frequency.
 
 For MCK-RA8T1: The AGT generates an interrupt which triggers the DTC to transfer the next value of the LUT to the DADR1 register.
